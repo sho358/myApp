@@ -40,9 +40,9 @@ group :production do
   gem 'pg', '>= 0.18', '< 2.0'
 end
 
-
 group :development, :test do
   gem 'rspec-rails', '~> 4.0.0.bata2'
+  gem 'rubocop-airbnb'
   gem 'rails-controller-testing'
   gem 'sqlite3', '1.3.13'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
