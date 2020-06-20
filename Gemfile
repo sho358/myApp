@@ -46,6 +46,7 @@ group :development, :test do
   gem 'rails-controller-testing'
   gem 'sqlite3', '1.3.13'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem "factory_bot_rails", "~> 4.10.0"
 end
 
 group :development do
@@ -72,3 +73,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'devise'
 gem 'bootstrap-sass'
+gem 'faker'
