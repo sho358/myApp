@@ -1,6 +1,13 @@
 <% provide(:title, "#{@dish.name}") %>
 <div class="container">
     <div class="row">
+        <div class="col-md-4">
+            <span class="picture">
+                <%= link_to((image_tag @dish.picture.url), dish_path(@dish.id), class: 'dish-picture') if @dish.picture.url.present? %>
+            </span>
+        </div>
+        
+        <div class="col-md-8">
         <h2 class="dish-name"><%= @dish.name %></h2>
         
         <div class="change-dish">
@@ -28,5 +35,6 @@
                 <h5>人気度：</h5><h4><%= @dish.popularity %></h4>
             </div>
         </div>
+    </div>
     </div>
 </div>
