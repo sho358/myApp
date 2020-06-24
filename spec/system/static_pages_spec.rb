@@ -67,6 +67,13 @@ RSpec.describe "StaticPages", type: :system do
           expect(page).to have_link d.name
         end
       end
+
+      it "料理を削除後、削除成功のフラッシュが表示されること" do 
+        visit root_path 
+        click_on '削除'
+        page.driver.browser.switch_to.alert.accept
+        expect(page).to have_content '料理が削除されました'
+      end
     end
   end
 end
