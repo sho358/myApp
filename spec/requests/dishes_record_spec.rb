@@ -5,9 +5,12 @@ RSpec.describe "料理登録", type: :request do
     let!(:dish) { create(:dish, user: user) }
 
     context "ログインしているユーザーの場合" do 
-        it "レスポンスが正常に表示されること" do 
+        before do 
             login_for_request(user)
             get new_dish_path
+        end
+
+        it "レスポンスが正常に表示されること" do 
             expect(response).to have_http_status "200"
             expect(response).to render_template('dishes/new')
         end
