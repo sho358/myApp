@@ -163,6 +163,10 @@ remember_me
 dishes
 =============*/ 
 
+.name a {
+    font-size: 30px;
+}
+
 .dishes {
     list-style: none;
     padding: 0;
@@ -176,7 +180,7 @@ dishes
 }
 .description {
     display: block;
-    margin-left: 60px;
+    // margin-left: 60px;
     img {
         display: block;
         padding: 5px 0;
@@ -359,6 +363,34 @@ comment
 }
 
 
+/*============
+recruit
+=============*/ 
+
+.recruit-login {
+    background-color: lightyellow;
+    margin-bottom: 30px;
+    padding: 20px;
+    border: solid 3px #000000;
+}
+
+.title-form {
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.description-form {
+    margin-bottom: 20px;
+}
+
+.recruit-account {
+    margin-top: 20px;
+}
+
+/*============
+
+=============*/ 
 /*============
 
 =============*/ 
