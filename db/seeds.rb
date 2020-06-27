@@ -74,6 +74,28 @@ Dish.create!(name: "サーモンのグリル",
     picture: open("#{Rails.root}/public/images/dish4.jpg"),
     user_id: 1)
 
+Dish.create!(name: "低脂質ハンバーガー",
+    description: "ガッツリ食べたい時の味方",
+    portion: 1.0,
+    tips: "ひき肉を豆腐にするとカロリーを抑えられるよ",
+    reference: "https://cookpad.com/recipe/2798655",
+    required_time: 30,
+    popularity: 3,
+    cook_memo: "パーティーにもってこいの一品",
+    picture: open("#{Rails.root}/app/assets/images/about9.jpg"),
+    user_id: 1)
+
+Dish.create!(name: "ヘルシーブレッド",
+    description: "全粒粉使用でグルテンが苦手な方にも最適",
+    portion: 1.0,
+    tips: "お気に入りの具材をトッピングでオリジナリティ満載",
+    reference: "https://cookpad.com/recipe/2798655",
+    required_time: 20,
+    popularity: 4,
+    cook_memo: "お弁当にも最適",
+    picture: open("#{Rails.root}/app/assets/images/about8.jpg"),
+    user_id: 1)
+
   users = User.all
   user = users.first 
   following = users[2..50]
